@@ -11,4 +11,11 @@ export default defineConfig({
       },
     },
   },
+  build: {
+    outDir: 'dist',
+    sourcemap: false,
+    rollupOptions: {
+      input: './src/main.jsx',
+    },
+  },
 })
