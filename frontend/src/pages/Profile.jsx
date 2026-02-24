@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useAuth } from '../contexts/AuthContext'
-import { UserIcon, MailIcon, CreditCardIcon, KeyIcon } from '@heroicons/react/24/outline'
+import { UserIcon, EnvelopeIcon, CreditCardIcon, KeyIcon } from '@heroicons/react/24/outline'
 
 const Profile = () => {
   const { user, updateUser, addCredits, api } = useAuth()
@@ -146,7 +146,7 @@ const Profile = () => {
                 </label>
                 <div className="mt-1 relative">
                   <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                    <MailIcon className="h-5 w-5 text-gray-400" />
+                  <EnvelopeIcon className="h-5 w-5 text-gray-400" />
                   </div>
                   <input
                     type="email"
