@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useAuth } from '../contexts/AuthContext'
-import { CreditCardIcon, CheckIcon, XIcon, ClockIcon } from '@heroicons/react/24/outline'
+import { CreditCardIcon, CheckIcon, XMarkIcon, ClockIcon } from '@heroicons/react/24/outline'
 
 const Subscriptions = () => {
   const { user, api } = useAuth()
@@ -234,7 +234,7 @@ const Subscriptions = () => {
                       {plan.can_access_vip_models ? (
                         <CheckIcon className="h-5 w-5 text-green-500 mx-auto" />
                       ) : (
-                        <XIcon className="h-5 w-5 text-red-500 mx-auto" />
+                        <XMarkIcon className="h-5 w-5 text-red-500 mx-auto" />
                       )}
                     </td>
                   ))}
